@@ -5,8 +5,46 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SPA Currencies</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<h1>SPA Currencies</h1>
+		<select id="currencies-selector">
+			<option selected>USD</optionselected>
+			<option>EUR</option>
+			<option>AUD</option>
+			<option>CAD</option>
+			<option>CHF</option>
+			<option>NZD</option>
+			<option>BGN</option>
+		</select>
+
+		<div id="results">
+			<div id="group1">
+				<h3>Group1</h3>
+				<ul id="values1">
+
+				</ul>
+			</div>
+			<div id="group2">
+				<h3>Group2</h3>
+				<ul id="values2">
+
+				</ul>
+			</div>
+			<div id="group3">
+				<h3>Group3</h3>
+				<ul id="values3">
+
+				</ul>
+			</div>
+		</div>
+
+		<div id="longest-array">
+			<h3>Longest Array</h3>
+			<p id="longest-array-length"></p>
+		</div>
+
+		<script src="app.js" />
 	</body>
 </html>
