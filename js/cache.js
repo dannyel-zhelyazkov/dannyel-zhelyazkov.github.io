@@ -6,11 +6,8 @@ const cache = (() => {
 		let cachedData = await getCachedData(cacheName, url);
 
 		if (cachedData) {
-			console.log('Retrieved cached data');
 			return cachedData;
 		}
-
-		console.log('Fetching fresh data');
 
 		const cacheStorage = await caches.open(cacheName);
 		await cacheStorage.add(new Request(url, { cache: 'reload' }));
